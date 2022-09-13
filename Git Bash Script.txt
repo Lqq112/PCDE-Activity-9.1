@@ -1,0 +1,80 @@
+yoann@LAPTOP-MK50436I MINGW64 ~ (main)
+$ pwd
+/c/Users/yoann
+
+yoann@LAPTOP-MK50436I MINGW64 ~ (main)
+$ mkdir PCDE-Activity-9.1
+
+yoann@LAPTOP-MK50436I MINGW64 ~ (main)
+$ cd PCDE-Activity-9.1
+
+yoann@LAPTOP-MK50436I MINGW64 ~/PCDE-Activity-9.1 (main)
+$ echo "# PCDE-Activity-9.1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Lqq112/PCDE-Activity-9.1.git
+git push -u origin main
+Initialized empty Git repository in C:/Users/yoann/PCDE-Activity-9.1/.git/
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+[master (root-commit) d35a696] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 231 bytes | 231.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Lqq112/PCDE-Activity-9.1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+yoann@LAPTOP-MK50436I MINGW64 ~/PCDE-Activity-9.1 (main)
+$ git add .
+warning: in the working copy of 'MIT_Original Data.ipynb', LF will be replaced by CRLF the next time Git touches it
+
+yoann@LAPTOP-MK50436I MINGW64 ~/PCDE-Activity-9.1 (main)
+$ git config --global core.autocrlf false
+
+yoann@LAPTOP-MK50436I MINGW64 ~/PCDE-Activity-9.1 (main)
+$ git add .
+
+yoann@LAPTOP-MK50436I MINGW64 ~/PCDE-Activity-9.1 (main)
+$
+git commit -m "add MIT file"
+[main 130c48f] add MIT file
+ 1 file changed, 47 insertions(+)
+ create mode 100644 MIT_Original Data.ipynb
+
+yoann@LAPTOP-MK50436I MINGW64 ~/PCDE-Activity-9.1 (main)
+$ git push
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 908 bytes | 908.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Lqq112/PCDE-Activity-9.1.git
+   d35a696..130c48f  main -> main
+
+
+yoann@LAPTOP-MK50436I MINGW64 ~/PCDE-Activity-9.1 (main)
+$ git add .
+
+yoann@LAPTOP-MK50436I MINGW64 ~/PCDE-Activity-9.1 (main)
+$ git commit -m "add MIT correction"
+[main cb94703] add MIT correction
+ 1 file changed, 47 insertions(+)
+ create mode 100644 MIT_Correction.ipynb
+
+yoann@LAPTOP-MK50436I MINGW64 ~/PCDE-Activity-9.1 (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 962 bytes | 320.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Lqq112/PCDE-Activity-9.1.git
+   130c48f..cb94703  main -> main
